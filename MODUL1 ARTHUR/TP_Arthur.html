@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link hfer="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>KLINIK EAD</title>
   </head>
-  <body">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img scr="public/logo-ead.png" alt="" width="200" class="d-inline-block align-text-top">
+          <img src="public/logo-ead.png" alt="" width="200" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#jumbotron">About</a>
             <a class="nav-link" href="#layanan">Layanan</a>
             <a class="nav-link " href="#registrasi">Registrasi</a>
           </div>
@@ -29,7 +30,7 @@
     </nav>
 
     <section class="Jumbotron">
-      <iframe scr="https://www.youtube.com/embed/AwMeQJ_u73I" width="700" height="400" style="margin-left: 25% ;margin-top: 7px;" frameborder="0">
+      <iframe src="https://www.youtube.com/embed/AwMeQJ_u73I" width="700" height="400" style="margin-left: 25% ;margin-top: 7px;" frameborder="0">
       </iframe>
       <figure class="text-center">
         <blockquote class="blockquote">
@@ -64,7 +65,7 @@
         </div>
 
         <div class="card pcr" style="margin-left: 20px;">
-          <img scr="public/pcr.jfif" class="card-img-top" alt="..." style="width: 70%;">
+          <img src="public/pcr.jfif" class="card-img-top" alt="..." style="width: 70%;">
           <div class="card-body">
             <h5 class="card-title">Tes PCR</h5>
             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus sunt perferendis veritatis officiis quisquam quo ad reiciendis quasi doloribus ducimus doloremque, alias ut nobis accusantium asperiores assumenda aspernatur hic aliquid.</p>
@@ -73,7 +74,7 @@
         </div>
 
         <div class="card antibodi" style="margin-left: 20px;">
-          <img scr="public/antibodi.jfif" class="card-img-top" alt="..." style="width: 70%;">
+          <img src="public/antibodi.jfif" class="card-img-top" alt="..." style="width: 70%;">
           <div class="card-body">
             <h5 class="card-title">Tes Antibodi</h5>
             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore velit nemo consequuntur dignissimos distinctio culpa fugit obcaecati accusantium perferendis? Repellendus iusto rerum tempora id et optio ut eos quae eligendi?</p>
@@ -83,33 +84,33 @@
       </div>
     </section>
 
-    <section id="Registrasi" style="margin-top: 30px;">
+    <section id="registrasi" style="margin-top: 30px;">
       <h1 style="text-align: center;">Registrasi</h1>
       <form class="formregist" action="#" style="width: 40% ; margin-left: 30%; ">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama</label>
-        <input type="text" class="form-control" disabled name="Nama" value="" id="exampleFormControlInput1" placeholder="nama">
+        <input type="text" class="form-control" name="Nama" value="" id="exampleFormControlInput1" placeholder="nama">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Nomor HP</label>
-        <input type="text" class="form-control" disabled name="nomorHP" value="" id="exampleFormControlInput1" placeholder=".....">
+        <input type="text" class="form-control" name="nomorHP" value="" id="exampleFormControlInput1" placeholder=".....">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Riwayat Penyakit</label>
-        <textarea class="form-control" name="rp" disabled value="rp" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" name="rp" value="rp" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <label for="exampleFormControlTextarea1" class="form-label">Pembayaran</label>
       <div class="form-check">
-        <input class="form-check-input" disabled type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">Tunai</label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" disabled type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
         <label class="form-check-label" for="flexRadioDefault2">Transfer</label>
       </div>
       <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">Jenis Test</label>
-        <select class="form-select" disabled id="inputGroupSelect01">
+        <select class="form-select"  id="inputGroupSelect01">
           <option selected>...</option>
           <option value="1">PCR</option>
           <option value="2">Rapid Test</option>

@@ -1,0 +1,12 @@
+.header {
+    height: 48px;
+    width: auto;
+    background-color: blue;
+}
+
+.footer {
+    margin-top: 212px;
+    height: 48px;
+    width: auto;
+    background-color: blue;
+}

@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 50px;">
         <?php 
-        session_start();
+        session_destroy();
         if(!empty($_SESSION['error'])) { ?>
         <div class="alert alert-danger" role="alert">
             <?= $_SESSION['error'] ?>

@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="style/style.css">
     <?php  ?>
     <?php if(isset($_COOKIE['nav'])) {
-        if($_COOKIE['nav'] == 'blue') { ?>
+        if($_COOKIES['nav'] == 'blue') { ?>
         <style>
             .header {
                 background-color: blue;
@@ -56,7 +56,7 @@
     <?php } } ?>
 
     <?php if(isset($_COOKIE['nav'])) {
-        if($_COOKIE['nav'] == 'green') { ?>
+        if($_COOKIES['nav'] == 'green') { ?>
         <style>
             .footer {
                 background-color: green;

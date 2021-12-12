@@ -30,7 +30,7 @@
                 <?php
                 include "Arthur_config.php";
                 $pilih = "SELECT * FROM Buku_table";
-                $query = mysqli_query($connect, $pilih);
+                $query = mysqli_query($koneksi, $pilih);
                 $row = mysqli_num_rows($query);
                 if ($row == 0) { ?>
                     <div class="col mt-5">

@@ -54,7 +54,7 @@
                     <?php
                     if(isset($_SESSION['login'])) {
                         ?>
-                        <a href="logout.php" class="text text-white">Logout</a>
+                        <a href="set/logout.php" class="text text-white">Logout</a>
                         <?php
                     }
                 ?>

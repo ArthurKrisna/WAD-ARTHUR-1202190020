@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 50px;">
         <?php 
-        session_destroy();
+        session_start();
         if(!empty($_SESSION['error'])) { ?>
         <div class="alert alert-danger" role="alert">
             <?= $_SESSION['error'] ?>
@@ -90,7 +90,7 @@
                     <button type="submit" class="btn btn-primary">Login</button>
                     <br>
                     <label class="form-check-label" for="exampleCheck1">Belum punya akun? <a
-                            href="registrasi.php">Registrasi</a></label>
+                            href="register.php">Registrasi</a></label>
                 </form>
             </div>
         </div>

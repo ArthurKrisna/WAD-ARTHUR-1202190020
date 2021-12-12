@@ -14,7 +14,7 @@
     $gambar = $id."_".$namafile;
 	move_uploaded_file($_FILES['gambar']['tmp_name'], 'IMAGE/'.$gambar);
 
-	$input = mysqli_query($connect, "INSERT INTO buku_table VALUES('$id','$judul','$penulis','$tahun','$deskripsi', '$gambar', '$tag', '$bahasa')");
+	$input = mysqli_query($koneksi, "INSERT INTO buku_table VALUES('$id','$judul','$penulis','$tahun','$deskripsi', '$gambar', '$tag', '$bahasa')");
     
 	header("location:Arthur_Home.php");
 ?>

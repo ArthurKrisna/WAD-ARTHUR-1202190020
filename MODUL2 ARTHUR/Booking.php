@@ -44,10 +44,10 @@
           <div class="container d-flex justify-content-center p-4">
                <div class="row">
                     <div class="col-sm-6 mr-3">
-                         <form action="myBooking.php" method="GET">
+                         <form action="myBooking.php" method="POST">
                               <div class="form-group">
                                    <label for="nama">Name</label>
-                                   <input type="text" class="form-control" value="" name="name">
+                                   <input type="text" class="form-control" value="" name="nama">
                               </div>
 
                               <div class="form-group">
@@ -57,14 +57,14 @@
 
                               <div class="form-group">
                                    <label for="nama">Duration</label>
-                                   <input type="number" class="form-control" name="durasi">
+                                   <input type="number" class="form-control" name="duration">
                                    <p class="text-muted">Day(s)</p>
                               </div>
 
                               <div class="form-group ">
                                    <label for="room">Building Type</label>
                                    <?php if (empty($_GET['room'])) : ?>
-                                        <select class="form-control" name="rooom" id="type" onchange="setPicture()">
+                                        <select class="form-control" name="rooom" id="tipe" onchange="setPicture()">
                                              <option value="Standard.jfif">
                                                   Standard</option>
                                              <option value="Superior.jfif">
@@ -74,32 +74,32 @@
                                         </select>
 
                                    <?php else : ?>
-                                        <input type="text" class="form-control" value=<?= $_GET['room'] ?> name="rooom" src readonly>
+                                        <input type="text" class="form-control" value=<?= $_GET['room'] ?> name="room" src readonly>
                                    <?php endif; ?>
                               </div>
                               
                               <div class="form-group">
                                    <label for="nomorhp">Phone Number</label>
-                                   <input type="text" class="form-control" name="number">
+                                   <input type="text" class="form-control" name="nomor">
                               </div>
 
                               <p class="mb-2">Add Service(s)</p>
                               
                               <div class="form-group">
                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="service" value="catering">
+                                        <input class="form-check-input" type="checkbox" name="service1" value="catering">
                                         <label class="form-check-label" for="catering">
                                              Catering<p class="mb-0"><small>$ 20/Service</small></p>
                                         </label>
                                    </div>
                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="servicee" value="dc">
+                                        <input class="form-check-input" type="checkbox" name="service2" value="dc">
                                         <label class="form-check-label" for="dc">
                                              Decoration<p class="mb-0"><small>$ 25/Service</small></p>
                                         </label>
                                    </div>
                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="serviceee" value="ss">
+                                        <input class="form-check-input" type="checkbox" name="service3" value="ss">
                                         <label class="form-check-label" for="ss">
                                              Extra service<p class="mb-0"><small>$ 30/Service</small></p>
                                         </label>

@@ -119,7 +119,7 @@ if(isset($_GET['id'])) {
                     <td><?= $row["lokasi"] ?></td>
                     <td><?= $row["tanggal"] ?></td>
                     <td><?= $row["harga"] ?></td>
-                    <td><a href="penan.php?id=<?= $row["id"] ?>"><button class="btn btn-danger">Hapus</button></a></td>
+                    <td><a href="pesanan.php?id=<?= $row["id"] ?>"><button class="btn btn-danger">Hapus</button></a></td>
                 </tr>
                 <?php $no++; }} ?>
             </tbody>

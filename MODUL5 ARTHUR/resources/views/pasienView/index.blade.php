@@ -27,7 +27,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($dtPasien as $item)
+                            @foreach ($Pasien as $item)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$item->nama_vaksin}}</td>

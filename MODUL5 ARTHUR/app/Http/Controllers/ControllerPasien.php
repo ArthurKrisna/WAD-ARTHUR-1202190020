@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ModelPasien;
-use App\Models\ModelVaksin;
+use App\Model\ModelPasien;
+use App\Model\ModelVaksin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
